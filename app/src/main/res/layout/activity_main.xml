@@ -1,78 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#D9D9D9"
+        >
+
+        <TextView
+            android:id="@+id/CafeMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cafe Menu"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="#FFDEDE"
+        android:padding="30dp">
 
-    >
-
-        <EditText
-            android:id="@+id/Edit1"
+        <Button
+            android:id="@+id/cafe1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="숫자 1"
+            android:layout_weight="1"
+            android:padding="60dp"
+            android:text="카페 1" />
 
-            ></EditText>
-
-
-        <EditText
-            android:id="@+id/Edit2"
+        <Button
+            android:id="@+id/cafe2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="숫자 2"
-            ></EditText>
+            android:layout_weight="1"
+            android:padding="60dp"
+            android:text="카페 2" />
 
-        <Button
-            android:id="@+id/Btn1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="더하기"
-            ></Button>
-
-        <Button
-            android:id="@+id/Btn2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="빼기"
-            ></Button>
-
-        <Button
-            android:id="@+id/Btn3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="곱하기"
-            ></Button>
-
-        <Button
-            android:id="@+id/Btn4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="나누기"
-            ></Button>
-
-        <TextView
-            android:id="@+id/TextResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="계산결과 >>"
-            android:layout_margin="10dp"
-            ></TextView>
 
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

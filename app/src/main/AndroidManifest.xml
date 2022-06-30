@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Cafe1" android:label="1번째 카페"/>
+        <activity android:name=".Cafe2" android:label="2번째 카페"/>
     </application>
 
 </manifest>
